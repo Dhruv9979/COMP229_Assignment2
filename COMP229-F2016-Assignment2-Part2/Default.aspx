@@ -15,7 +15,13 @@
                 <div class="jumbotron">
                      <asp:GridView ID="teamGridView" runat="server" AutoGenerateColumns="false"
                          CssClass="table-table-bordered table-striped table-hover">
-                           
+                           <Columns>
+                        <asp:BoundField DataField="Rankings" HeaderText="Rankings" Visible="true" />
+                        <asp:BoundField DataField="Teams" HeaderText="Teams" Visible="true" />
+                        <asp:BoundField DataField="points" HeaderText="points" Visible="true" />
+                        <asp:BoundField DataField="Result" HeaderText="Result" Visible="true" />
+                        
+                    </Columns>
                      </asp:GridView>
                   
                 </div>
